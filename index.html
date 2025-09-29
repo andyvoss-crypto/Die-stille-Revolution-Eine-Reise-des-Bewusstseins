@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<!-- Das lang-Attribut wird dynamisch gesetzt -->
 <html lang="de" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Dynamischer Titel -->
     <title>Die stille Revolution: Eine Reise des Bewusstseins</title>
 
-    <!-- SEO & Social Media Meta Tags (Erweitert & Validiert) -->
-    <!-- Die Beschreibungen werden dynamisch je nach Sprache angepasst -->
     <meta name="description" content="Entdecken Sie die stille Revolution: Eine tiefgreifende Analyse, wie bewusste Elternschaft und die Transformation des Einzelnen die Wurzeln globaler Krisen adressieren und die Zukunft gestalten.">
-    <meta name="keywords" content="bewusste elternschaft, neurobiologie, soziale ansteckung, nachhaltigkeit, weisheit, transformation, zukunft, conscious parenting, neurobiology, social contagion, sustainability, wisdom, future">
+    <meta name="keywords" content="bewusste elternschaft, neurobiologie, anthropozän, nachhaltigkeit, transformation, zukunft, bewusstsein, persönlichkeitsentwicklung, klimawandel">
     <link rel="canonical" href="https://www.deine-domain.de/">
     
-    <!-- Open Graph / Facebook (Validiert) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.deine-domain.de/">
     <meta property="og:title" content="Die stille Revolution: Eine Reise des Bewusstseins">
     <meta property="og:description" content="Eine tiefgreifende Analyse, wie bewusste Elternschaft die Wurzeln globaler Krisen adressiert und die Zukunft gestaltet.">
-    <!-- Bild-Optimierung: WebP/AVIF wäre im Build-Prozess ideal. Hier mit Lazy Loading. -->
     <meta property="og:image" content="https://placehold.co/1200x630/0a0a0a/38b2ac?text=Die+Stille+Revolution">
     <meta property="og:locale" content="de_DE">
-    <!-- Alternate locales für andere Sprachen -->
-    <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:locale:alternate" content="es_ES">
 
-    <!-- Twitter (Validiert) -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.deine-domain.de/">
     <meta property="twitter:title" content="Die stille Revolution: Eine Reise des Bewusstseins">
     <meta property="twitter:description" content="Eine tiefgreifende Analyse, wie bewusste Elternschaft die Wurzeln globaler Krisen adressiert und die Zukunft gestaltet.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/0a0a0a/38b2ac?text=Die+Stille+Revolution">
 
-    <!-- Internationalisierung: hreflang-Tags für SEO -->
     <link rel="alternate" hreflang="de" href="https://www.deine-domain.de/index.html">
-    <link rel="alternate" hreflang="en" href="https://www.deine-domain.de/index.html?lang=en">
-    <link rel="alternate" hreflang="es" href="https://www.deine-domain.de/index.html?lang=es">
-    <link rel="alternate" hreflang="fr" href="https://www.deine-domain.de/index.html?lang=fr">
-    <link rel="alternate" hreflang="ru" href="https://www.deine-domain.de/index.html?lang=ru">
-    <link rel="alternate" hreflang="ar" href="https://www.deine-domain.de/index.html?lang=ar">
-    <link rel="alternate" hreflang="zh" href="https://www.deine-domain.de/index.html?lang=zh">
     <link rel="alternate" hreflang="x-default" href="https://www.deine-domain.de/index.html">
 
-    <!-- Structured Data (JSON-LD) für besseres Suchmaschinenverständnis -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,23 +45,24 @@
     }
     </script>
     
-    <!-- Performance: Scripts werden asynchron/verzögert geladen -->
-    <script src="https://cdn.tailwindcss.com" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script> <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS ist validiert und für Performance optimiert */
-        /* Barrierefreiheit: Farbkontraste erfüllen WCAG AAA-Standards */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0a0a0a;
-            color: #f1f5f9; /* Kontrast-Ratio > 7:1 auf #0a0a0a */
+            color: #f1f5f9;
         }
         .gradient-text {
             background: linear-gradient(90deg, #38b2ac, #81e6d9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-parasit {
+            background: linear-gradient(90deg, #F9532D, #D62323);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -115,7 +98,6 @@
             background-color: #38b2ac; transition: width 0.3s ease;
         }
         .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-        /* Barrierefreiheit: Klar sichtbarer Fokus für Tastaturnavigation */
         :focus-visible {
             outline: 3px solid #81e6d9;
             outline-offset: 4px;
@@ -138,35 +120,19 @@
 
 <body class="antialiased">
 
-    <!-- Navigation mit Sprachauswahl und robusten ARIA-Attributen -->
     <nav id="navbar" class="sticky top-0 z-50 bg-black/70 backdrop-blur-lg border-b border-slate-800 transition-all duration-300">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
-                <a href="#beginn" class="text-xl font-bold gradient-text" data-translate="nav.brand">Die Stille Revolution</a>
+                <a href="#beginn" class="text-xl font-bold gradient-text">Die Stille Revolution</a>
                 <div class="hidden md:flex space-x-6 items-center">
-                    <a href="#beginn" class="nav-link text-slate-300 hover:text-white font-medium" data-translate="nav.beginn">Der Beginn</a>
-                    <a href="#fundament" class="nav-link text-slate-300 hover:text-white font-medium" data-translate="nav.fundament">Das Fundament</a>
-                    <a href="#wege" class="nav-link text-slate-300 hover:text-white font-medium" data-translate="nav.wege">Zwei Wege</a>
-                    <a href="#welle" class="nav-link text-slate-300 hover:text-white font-medium" data-translate="nav.effekt">Der Effekt</a>
-                    <a href="#these" class="nav-link text-slate-300 hover:text-white font-medium" data-translate="nav.these">Die These</a>
-                    
-                    <!-- Sprachauswahl Dropdown -->
-                    <div class="relative" id="lang-switcher">
-                        <button id="lang-button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" class="flex items-center text-slate-300 hover:text-white font-medium focus:outline-none p-2 rounded-md">
-                            <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C13.18 7.061 14.122 7.5 15 7.5h6M9 11.25c0-1.148.232-2.233.666-3.234m-3.334 0a48.567 48.567 0 01-3.334-3.234m0 0c-.378.52-.755 1.062-1.134 1.623M3 11.25h6m-3-3.75c.608.269 1.25.425 1.923.425M3 15c.608.269 1.25.425 1.923.425m0 0A48.567 48.567 0 019 15c1.12 0 2.233-.038 3.334-.114m-6.25 3.75a48.601 48.601 0 01-3.334-3.234" /></svg>
-                            <span id="current-lang-text">DE</span>
-                            <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-                        </button>
-                        <ul id="lang-menu" role="menu" aria-orientation="vertical" aria-labelledby="lang-button" class="absolute right-0 mt-2 w-32 origin-top-right bg-slate-800 divide-y divide-slate-700 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden">
-                            <li role="presentation"><a href="?lang=de" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="de">Deutsch (DE)</a></li>
-                            <li role="presentation"><a href="?lang=en" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="en">English (EN)</a></li>
-                            <li role="presentation"><a href="?lang=es" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="es">Español (ES)</a></li>
-                            <li role="presentation"><a href="?lang=fr" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="fr">Français (FR)</a></li>
-                            <li role="presentation"><a href="?lang=ru" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="ru">Русский (RU)</a></li>
-                            <li role="presentation"><a href="?lang=ar" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="ar">العربية (AR)</a></li>
-                            <li role="presentation"><a href="?lang=zh" role="menuitem" class="lang-option text-slate-300 block px-4 py-2 text-sm hover:bg-slate-700" data-lang="zh">中文 (ZH)</a></li>
-                        </ul>
-                    </div>
+                    <a href="https://andyvoss-crypto.github.io/Enzyklop-die-des-Lebens-Eine-Reise-durch-Wissen-und-Weisheit-final/" class="nav-link text-slate-300 hover:text-white font-medium" target="_blank">Home</a>
+                    <a href="#beginn" class="nav-link text-slate-300 hover:text-white font-medium">Der Beginn</a>
+                    <a href="#fundament" class="nav-link text-slate-300 hover:text-white font-medium">Das Fundament</a>
+                    <a href="#wege" class="nav-link text-slate-300 hover:text-white font-medium">Zwei Wege</a>
+                    <a href="#welle" class="nav-link text-slate-300 hover:text-white font-medium">Der Effekt</a>
+                    <a href="#herausforderungen" class="nav-link text-slate-300 hover:text-white font-medium">Herausforderungen</a>
+                    <a href="#chancen" class="nav-link text-slate-300 hover:text-white font-medium">Chancen</a>
+                    <a href="#these" class="nav-link text-slate-300 hover:text-white font-medium">Die These</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" aria-label="Menü öffnen/schließen" aria-controls="mobile-menu" aria-expanded="false" class="text-slate-300 hover:text-white p-2">
@@ -176,28 +142,30 @@
             </div>
         </div>
         <div id="mobile-menu" class="md:hidden hidden bg-slate-900">
-            <a href="#beginn" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" data-translate="nav.beginn">Der Beginn</a>
-            <a href="#fundament" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" data-translate="nav.fundament">Das Fundament</a>
-            <a href="#wege" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" data-translate="nav.wege">Zwei Wege</a>
-            <a href="#welle" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" data-translate="nav.effekt">Der Effekt</a>
-            <a href="#these" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" data-translate="nav.these">Die These</a>
+            <a href="https://andyvoss-crypto.github.io/Enzyklop-die-des-Lebens-Eine-Reise-durch-Wissen-und-Weisheit-final/" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800" target="_blank">Home</a>
+            <a href="#beginn" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Der Beginn</a>
+            <a href="#fundament" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Das Fundament</a>
+            <a href="#wege" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Zwei Wege</a>
+            <a href="#welle" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Der Effekt</a>
+            <a href="#herausforderungen" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Herausforderungen</a>
+            <a href="#chancen" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Chancen</a>
+            <a href="#these" class="block py-2 px-4 text-sm text-slate-300 hover:bg-slate-800">Die These</a>
         </div>
     </nav>
 
     <header id="beginn" role="banner" class="hero-bg min-h-screen flex items-center justify-center p-4 -mt-16 scroll-mt-20">
-        <!-- Dekorative Elemente sind für Screenreader versteckt -->
         <div id="particles-js" aria-hidden="true"></div>
         <div class="content-container text-center">
             <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-4">
-                <span class="text-white" data-translate="hero.title1.1">Ein unbeschriebenes</span> <span class="gradient-text" data-translate="hero.title1.2">Blatt.</span>
+                <span class="text-white">Ein unbeschriebenes</span> <span class="gradient-text">Blatt.</span>
             </h1>
             <h2 class="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-6">
-                <span class="text-white" data-translate="hero.title2.1">Die Zukunft,</span> <span class="gradient-text" data-translate="hero.title2.2">geformt durch uns.</span>
+                <span class="text-white">Die Zukunft,</span> <span class="gradient-text">geformt durch uns.</span>
             </h2>
-            <p class="text-lg md:text-2xl max-w-4xl mx-auto text-slate-300 mb-8 leading-relaxed" data-translate="hero.subtitle">
-                Jeder Mensch beginnt als reines Potenzial. Die größte und leiseste Revolution der Weltgeschichte findet nicht auf den Straßen statt, sondern im Kinderzimmer. Sie beginnt mit Bewusstsein.
+            <p class="text-lg md:text-2xl max-w-4xl mx-auto text-slate-300 mb-8 leading-relaxed">
+                Jeder Mensch beginnt seine Existenz als reines, unendliches Potenzial. Diese Erkenntnis offenbart eine tiefgreifende Verantwortung. Die größte und leiseste Revolution der Weltgeschichte findet nicht auf den Straßen statt, nicht in Parlamenten und nicht durch Konflikte. Sie vollzieht sich im Stillen, im Kinderzimmer, im Herzen der Familie. Sie beginnt mit Bewusstsein.
             </p>
-            <a href="#fundament" class="bg-teal-500 text-black font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-400 transition duration-300 transform hover:scale-105" data-translate="hero.button">
+            <a href="#fundament" class="bg-teal-500 text-black font-bold py-3 px-8 rounded-lg text-lg hover:bg-teal-400 transition duration-300 transform hover:scale-105">
                 Entdecke die Wurzeln
             </a>
         </div>
@@ -206,220 +174,173 @@
     <main class="py-20 md:py-32">
         
         <section id="fundament" aria-labelledby="fundament-title" class="container mx-auto px-4 mb-20 md:mb-32 scroll-mt-20">
-            <h2 id="fundament-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span data-translate="fundament.title1">Das</span> <span class="gradient-text" data-translate="fundament.title2">Fundament</span></h2>
-            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg" data-translate="fundament.subtitle">Neurobiologie und Entwicklungspsychologie beweisen: Die ersten Jahre sind entscheidend. Bewusste Elternschaft ist keine Ideologie, sondern die Programmierung des Betriebssystems für ein ganzes Leben.</p>
+            <h2 id="fundament-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span>Das</span> <span class="gradient-text">Fundament</span></h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg">Neurobiologie und Entwicklungspsychologie beweisen: Die ersten Lebensjahre sind ein kritisches Zeitfenster, in dem die Architektur des Gehirns geformt wird. Bewusste Elternschaft ist daher keine vage Ideologie, sondern die aktive Programmierung des menschlichen Betriebssystems für ein ganzes Leben voller Resilienz, Empathie und Kreativität.</p>
             
             <div class="max-w-4xl mx-auto">
-                <h3 class="text-2xl font-bold mb-3 text-teal-400" data-translate="fundament.empathy.title">Die Architektur der Empathie</h3>
-                <p class="text-slate-300 text-lg" data-translate="fundament.empathy.text">Fähigkeiten wie Mitgefühl und Resilienz sind nicht angeboren, sondern werden in den kritischen Entwicklungsphasen geformt. Eine sichere Bindung ist der Nährboden, auf dem die neuronalen Bahnen für soziale Kompetenz wachsen. Es ist die wirtschaftlich klügste und humanste Investition, die eine Gesellschaft tätigen kann.
-                <br><br><em class="text-sm text-slate-500" data-translate="fundament.source">Quelle: Center on the Developing Child, Harvard University (angepasst). Datenstand: Q3 2025.</em>
+                <h3 class="text-2xl font-bold mb-3 text-teal-400">Die Architektur der Empathie</h3>
+                <p class="text-slate-300 text-lg">Fähigkeiten wie Mitgefühl, Selbstregulation und Resilienz sind nicht genetisch vorbestimmt, sondern werden in den kritischen Entwicklungsphasen durch Interaktion und Bindung geformt. Eine sichere, liebevolle Bindung zu den primären Bezugspersonen ist der Nährboden, auf dem die neuronalen Bahnen für soziale und emotionale Kompetenz wachsen. Prozesse wie die Myelinisierung und das "Synaptic Pruning" festigen jene Verbindungen, die durch wiederholte positive Erfahrungen gestärkt werden. Es ist die wirtschaftlich klügste und humanste Investition in die Zukunft, die eine Gesellschaft tätigen kann, denn sie reduziert langfristig die Kosten für Gesundheitssysteme und soziale Sicherung.
+                <br><br><em class="text-sm text-slate-500">Quelle: In Anlehnung an Forschungen des Center on the Developing Child, Harvard University. Datenstand: Q3 2025.</em>
                 </p>
             </div>
         </section>
 
         <section id="wege" aria-labelledby="wege-title" class="container mx-auto px-4 mb-20 md:mb-32 scroll-mt-20">
-            <h2 id="wege-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span data-translate="wege.title1">Zwei</span> <span class="gradient-text" data-translate="wege.title2">Wege</span>, <span data-translate="wege.title3">eine Wurzel</span></h2>
-            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg" data-translate="wege.subtitle">Die Weichen werden früh gestellt. Die Umgebung, die wir schaffen, bestimmt den Weg. Die Extreme, die aus unbewusster vs. bewusster Erziehung resultieren, sind wissenschaftlich evident.</p>
+            <h2 id="wege-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span>Zwei</span> <span class="gradient-text">Wege</span>, <span>eine Wurzel</span></h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg">Die Weichen des Lebens werden in der Kindheit gestellt. Die Umgebung, die wir für die nächste Generation schaffen, bestimmt maßgeblich ihren Weg. Die Extreme, die aus unbewusster Vernachlässigung versus bewusster Förderung resultieren, sind wissenschaftlich evident und manifestieren sich in der gesamten Biografie eines Menschen.</p>
         
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                  <div class="card p-6 md:p-8 rounded-2xl border-t-4 border-red-500">
-                    <h4 class="text-2xl font-bold mb-4 text-red-400" data-translate="wege.unconscious.title">Der Weg der Leere: Unbewusste Prägung</h4>
-                    <p class="text-slate-300 mb-6" data-translate="wege.unconscious.text">Übermäßiger Medienkonsum und mangelnde emotionale Zuwendung sind Symptome einer tieferen Ursache: unbewusste Eltern, die ihre eigenen ungelösten Muster weitergeben.</p>
-                    <h5 class="font-bold text-slate-200 mb-2" data-translate="wege.consequences">Langfristige Konsequenzen:</h5>
+                    <h4 class="text-2xl font-bold mb-4 text-red-400">Der Weg der Leere: Unbewusste Prägung</h4>
+                    <p class="text-slate-300 mb-6">Chronischer Stress, übermäßiger Medienkonsum und mangelnde emotionale Zuwendung sind nicht nur Verhaltensweisen, sondern Symptome einer tieferen Ursache: unbewusste Bezugspersonen, die ihre eigenen ungelösten Traumata und dysfunktionalen Muster unreflektiert weitergeben. Dies führt zu einer toxischen Stressreaktion im kindlichen Gehirn, die die Entwicklung beeinträchtigt.</p>
+                    <h5 class="font-bold text-slate-200 mb-2">Langfristige Konsequenzen:</h5>
                     <ul class="list-disc list-inside space-y-2 text-slate-300">
-                        <li data-translate="wege.unconscious.c1">Statistisch höheres Risiko für Depressionen, Angststörungen & Sucht.</li>
-                        <li data-translate="wege.unconscious.c2">Geringere Bildungschancen und berufliches Potenzial.</li>
-                        <li data-translate="wege.unconscious.c3">Höhere Wahrscheinlichkeit, den Kreislauf fortzusetzen.</li>
+                        <li>Erhöhte Cortisolspiegel, die die Entwicklung des Hippocampus beeinträchtigen, was zu Lern- und Gedächtnisproblemen führt.</li>
+                        <li>Statistisch signifikant höheres Risiko für Depressionen, Angststörungen und Suchterkrankungen im Erwachsenenalter.</li>
+                        <li>Geringere Bildungschancen und eingeschränktes berufliches Potenzial durch mangelnde exekutive Funktionen.</li>
+                        <li>Eine hohe Wahrscheinlichkeit, den Kreislauf von Traumata und unbewusstem Verhalten an die nächste Generation weiterzugeben.</li>
                     </ul>
                 </div>
                 <div class="card p-6 md:p-8 rounded-2xl border-t-4 border-teal-500">
-                    <h4 class="text-2xl font-bold mb-4 text-teal-400" data-translate="wege.conscious.title">Der Weg der Fülle: Bewusste Gestaltung</h4>
-                    <p class="text-slate-300 mb-6" data-translate="wege.conscious.text">Eine Umgebung, die von Naturverbundenheit, Kreativität und echter menschlicher Verbindung geprägt ist, entsteht durch bewusste Entscheidungen.</p>
-                     <h5 class="font-bold text-slate-200 mb-2" data-translate="wege.consequences">Langfristige Konsequenzen:</h5>
+                    <h4 class="text-2xl font-bold mb-4 text-teal-400">Der Weg der Fülle: Bewusste Gestaltung</h4>
+                    <p class="text-slate-300 mb-6">Eine Umgebung, die von Naturverbundenheit, Kreativität, emotionaler Sicherheit und echter menschlicher Verbindung geprägt ist, entsteht nicht zufällig. Sie ist das Ergebnis bewusster Entscheidungen, elterlicher Selbstreflexion und der Bereitschaft, emotionale Arbeit zu leisten und als Vorbild zu agieren.</p>
+                     <h5 class="font-bold text-slate-200 mb-2">Langfristige Konsequenzen:</h5>
                     <ul class="list-disc list-inside space-y-2 text-slate-300">
-                        <li data-translate="wege.conscious.c1">Entwicklung von Resilienz und emotionaler Stabilität.</li>
-                        <li data-translate="wege.conscious.c2">Hohe soziale Kompetenz und Empathiefähigkeit.</li>
-                        <li data-translate="wege.conscious.c3">Befähigung, als Gestalter positiv in die Gesellschaft zu wirken.</li>
+                        <li>Entwicklung von starker Resilienz und emotionaler Stabilität durch Co-Regulation und das Erlernen gesunder Bewältigungsstrategien.</li>
+                        <li>Ausgeprägte soziale Kompetenz und Empathiefähigkeit, basierend auf der Aktivität von Spiegelneuronen in einem positiven Umfeld.</li>
+                        <li>Förderung eines "Growth Mindset", das lebenslanges Lernen und die Fähigkeit zur Problemlösung unterstützt.</li>
+                        <li>Befähigung, als kreative Gestalter, Innovatoren und mitfühlende Führungskräfte positiv in die Gesellschaft zu wirken.</li>
                     </ul>
                 </div>
             </div>
         </section>
         
         <section id="welle" aria-labelledby="welle-title" class="container mx-auto px-4 mb-20 md:mb-32 scroll-mt-20">
-            <h2 id="welle-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span data-translate="welle.title1">Der</span> <span class="gradient-text" data-translate="welle.title2">Welleneffekt</span></h2>
-            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg" data-translate="welle.subtitle">Veränderung ist ansteckend. Ein einzelner Akt des Bewusstseins, eine einzige liebevolle Interaktion, pflanzt einen Samen, der sich exponentiell ausbreitet.</p>
+            <h2 id="welle-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span>Der</span> <span class="gradient-text">Welleneffekt</span></h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg">Veränderung ist ansteckend, sowohl im Negativen als auch im Positiven. Ein einzelner Akt des Bewusstseins, eine einzige liebevolle und präsente Interaktion, pflanzt einen Samen, der sich durch die Prinzipien der sozialen Neurobiologie exponentiell ausbreitet.</p>
             
             <div class="grid lg:grid-cols-5 gap-12 items-center">
                 <div class="lg:col-span-3">
-                    <h3 class="text-2xl font-bold text-teal-400 mb-4" data-translate="welle.chart.title">Von ICH zu WIR</h3>
-                    <p class="text-slate-300 text-lg mb-6" data-translate="welle.chart.text">Die Theorie der „sozialen Ansteckung“ belegt: Emotionen, Ideen und Verhaltensweisen verbreiten sich in sozialen Netzwerken wie Wellen. Jede bewusste Handlung inspiriert andere.</p>
+                    <h3 class="text-2xl font-bold text-teal-400 mb-4">Von ICH zu WIR: Die Biologie der Ansteckung</h3>
+                    <p class="text-slate-300 text-lg mb-6">Die Theorie der „sozialen Ansteckung“ (Social Contagion) belegt, was wir intuitiv spüren: Emotionen, Ideen und Verhaltensweisen verbreiten sich in sozialen Netzwerken wie Wellen. Dies ist auf neurobiologischer Ebene durch Spiegelneuronen verankert, die uns befähigen, die Emotionen und Absichten anderer zu fühlen. Jede bewusste, positive Handlung aktiviert dieses System bei Beobachtern und inspiriert zur Nachahmung.</p>
                     <div class="card h-[350px] p-6 rounded-2xl">
                          <canvas id="wandelChart" role="img" aria-label="Liniendiagramm, das das exponentielle Wachstum des Bewusstseins von 'Individuum' bis 'Kultur' zeigt."></canvas>
                     </div>
                 </div>
                 <div class="lg:col-span-2">
-                    <h3 class="text-2xl font-bold text-teal-400 mb-4" data-translate="welle.timeline.title">Die Stufen des Wandels</h3>
+                    <h3 class="text-2xl font-bold text-teal-400 mb-4">Die Stufen des Wandels</h3>
                      <div class="space-y-4">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h4 class="font-bold text-xl" data-translate="welle.timeline.s1.title">1. Innere Einkehr</h4>
-                            <p class="text-slate-400" data-translate="welle.timeline.s1.text">Alles beginnt mit der Selbstreflexion des Einzelnen.</p>
+                            <h4 class="font-bold text-xl">1. Innere Einkehr</h4>
+                            <p class="text-slate-400">Alles beginnt mit der radikalen Ehrlichkeit und Selbstreflexion des Einzelnen.</p>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h4 class="font-bold text-xl" data-translate="welle.timeline.s2.title">2. Bewusste Handlung</h4>
-                            <p class="text-slate-400" data-translate="welle.timeline.s2.text">Die Erkenntnis manifestiert sich im Verhalten.</p>
+                            <h4 class="font-bold text-xl">2. Bewusste Handlung</h4>
+                            <p class="text-slate-400">Die gewonnene Erkenntnis manifestiert sich im täglichen Verhalten und in den Interaktionen.</p>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h4 class="font-bold text-xl" data-translate="welle.timeline.s3.title">3. Soziale Ansteckung</h4>
-                            <p class="text-slate-400" data-translate="welle.timeline.s3.text">Das neue Verhalten inspiriert das Umfeld.</p>
+                            <h4 class="font-bold text-xl">3. Soziale Ansteckung</h4>
+                            <p class="text-slate-400">Das authentische, neue Verhalten inspiriert und validiert das direkte soziale Umfeld.</p>
                         </div>
                         <div class="timeline-item" style="padding-bottom: 0;">
                             <div class="timeline-dot" style="border-color: #81e6d9;"></div>
-                            <h4 class="font-bold text-xl" data-translate="welle.timeline.s4.title">4. Kulturelle Transformation</h4>
-                            <p class="text-slate-400" data-translate="welle.timeline.s4.text">Neue Werte verändern die Gesellschaft.</p>
+                            <h4 class="font-bold text-xl">4. Kulturelle Transformation</h4>
+                            <p class="text-slate-400">Wenn eine kritische Masse erreicht ist, verändern neue Werte die Normen der Gesellschaft.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="herausforderungen" aria-labelledby="herausforderungen-title" class="container mx-auto px-4 mb-20 md:mb-32 scroll-mt-20">
+            <h2 id="herausforderungen-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span>Globale</span> <span class="gradient-text">Herausforderungen</span></h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg">Die äußere Welt spiegelt unseren inneren Zustand wider. Die existenziellen Krisen, denen wir gegenüberstehen, sind miteinander verknüpft und bedrohen die Stabilität unseres Planeten sowie unser eigenes Wohlergehen. Sie sind Symptome eines tiefer liegenden Ungleichgewichts.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 md:p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3">Klimawandel</h3>
+                    <p class="text-slate-300">Die globale Erwärmung, der Anstieg des Meeresspiegels und die Zunahme von Extremwetterereignissen sind direkte Folgen menschlichen Handelns. Sie stören die natürlichen Gleichgewichte, die das Leben auf der Erde über Jahrmillionen reguliert haben.</p>
+                </div>
+                <div class="card p-6 md:p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3">Verlust der Biodiversität</h3>
+                    <p class="text-slate-300">Wir erleben ein Massenaussterben von Arten, das durch die Zerstörung von Lebensräumen, Umweltverschmutzung und den Klimawandel verursacht wird. Dieses Reissen im Netz des Lebens gefährdet die Resilienz ganzer Ökosysteme.</p>
+                </div>
+                <div class="card p-6 md:p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-3">Ressourcen-Übernutzung</h3>
+                    <p class="text-slate-300">Unsere Konsummuster und Wirtschaftsmodelle basieren auf der Annahme unendlicher Ressourcen auf einem endlichen Planeten. Die weitreichende Verschmutzung von Luft, Wasser und Böden ist ein klares Zeichen, dass dieses System an seine Grenzen stößt.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="chancen" aria-labelledby="chancen-title" class="container mx-auto px-4 mb-20 md:mb-32 scroll-mt-20">
+            <h2 id="chancen-title" class="text-3xl md:text-5xl font-bold text-center mb-4"><span>Chancen</span> <span class="gradient-text">des Wandels</span></h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12 md:mb-20 text-lg">Trotz des Ernstes der Lage liegt in der Krise eine beispiellose Chance. Eine grundlegende Transformation hin zu einer nachhaltigen Zukunft ist nicht nur notwendig, sondern möglich. Die Menschheit besitzt die Fähigkeit und die Mittel, einen positiveren Weg einzuschlagen.</p>
+             <div class="max-w-3xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4 class="font-bold text-xl text-teal-400">Technologische Innovation</h4>
+                    <p class="text-slate-400">Die Entwicklung und der Einsatz sauberer Technologien wie erneuerbare Energien, Kreislaufwirtschaftssysteme und nachhaltige Landwirtschaft können die materiellen Grundlagen für eine neue Ära schaffen.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4 class="font-bold text-xl text-teal-400">Politischer & Gesellschaftlicher Wandel</h4>
+                    <p class="text-slate-400">Stärkere Umweltgesetze, internationale Kooperation und ein tiefgreifendes Umdenken bei Konsummustern und Lebensstilen sind entscheidend, um den Wandel auf systemischer Ebene zu verankern.</p>
+                </div>
+                <div class="timeline-item" style="padding-bottom: 0;">
+                    <div class="timeline-dot" style="border-color: #81e6d9;"></div>
+                    <h4 class="font-bold text-xl text-teal-400">Neues Mensch-Natur-Verhältnis</h4>
+                    <p class="text-slate-400">Der tiefgreifendste Wandel ist ein innerer: die Abkehr von einer rein ausbeuterischen Sichtweise hin zu einer Kultur der Verantwortung, die den Wert der Natur anerkennt und unsere tiefe Verbundenheit mit allen Lebewesen versteht.</p>
                 </div>
             </div>
         </section>
 
         <section id="these" aria-labelledby="these-title" class="bg-slate-900/70 py-20 md:py-32 scroll-mt-20">
             <div class="container mx-auto px-4 text-center">
-                <h2 id="these-title" class="text-5xl md:text-8xl font-black text-white mb-6" data-translate="these.title1">
+                <h2 id="these-title" class="text-5xl md:text-8xl font-black text-white mb-6">
                     DER MENSCH.
                 </h2>
-                <h2 class="text-5xl md:text-8xl font-black gradient-text mb-12" data-translate="these.title2">
+                <h2 class="text-5xl md:text-8xl font-black gradient-text mb-12">
                     DIE STILLE REVOLUTION.
                 </h2>
-                <p class="text-xl md:text-3xl text-slate-300 max-w-4xl mx-auto mb-8 leading-relaxed" data-translate="these.subtitle">
-                   Die größte Kraft zur Lösung unserer globalen Krisen liegt nicht in äußeren Systemen, sondern in der inneren Transformation des Einzelnen. Sie ist die einzige Revolution, die nicht durch Blut, sondern durch Liebe gewinnt.
+                <p class="text-xl md:text-3xl text-slate-300 max-w-4xl mx-auto mb-8 leading-relaxed">
+                   Die ultimative Kraft zur Lösung unserer globalen Krisen – von Klimawandel über soziale Ungerechtigkeit bis hin zu politischer Polarisierung – liegt nicht in äußeren Systemen, Gesetzen oder Technologien allein, sondern in der inneren Transformation des Einzelnen. Eine Generation, die in emotionaler Sicherheit und Bewusstheit aufwächst, ist die einzige nachhaltige Lösung. Sie ist die stille Revolution, die nicht durch Blut, sondern durch Liebe gewinnt.
                 </p>
             </div>
         </section>
+        
+        <nav aria-label="Seitennavigation am Ende" class="container mx-auto px-4 pt-16 pb-8 border-t border-slate-800 text-center">
+            <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-2">
+                <a href="https://andyvoss-crypto.github.io/Enzyklop-die-des-Lebens-Eine-Reise-durch-Wissen-und-Weisheit-final/" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium" target="_blank">Home</a>
+                <a href="#beginn" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Der Beginn</a>
+                <a href="#fundament" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Das Fundament</a>
+                <a href="#wege" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Zwei Wege</a>
+                <a href="#welle" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Der Effekt</a>
+                <a href="#herausforderungen" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Herausforderungen</a>
+                <a href="#chancen" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Chancen</a>
+                <a href="#these" class="text-slate-400 hover:text-teal-400 transition-colors duration-300 text-sm font-medium">Die These</a>
+            </div>
+            <p class="text-2xl font-bold mt-8">
+                <span class="text-white">Vom Parasiten </span>
+                <span class="gradient-text-parasit">zum Hüter</span>
+            </p>
+        </nav>
 
     </main>
 
-    <footer role="contentinfo" class="text-center py-8 bg-black border-t border-slate-800">
-        <p class="text-slate-500" data-translate="footer.basis">Basiert auf evidenzbasierter Forschung.</p>
-        <p class="text-sm text-slate-600 mt-2" data-translate="footer.collab">Eine synergetische Kollaboration von menschlicher Vision und KI-Analyse.</p>
+    <footer role="contentinfo" class="text-center py-8 bg-black">
+        <div class="container mx-auto px-4">
+            <p class="text-slate-500 max-w-2xl mx-auto">Erstellt durch eine synergetische Kollaboration von menschlicher Expertise und KI-Forschungsinstanzen, um dieses Wissen für die Menschheit nutzbar zu machen.</p>
+            <p class="text-sm text-slate-600 mt-2">© 2025 Andy Voß. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 
-    <!-- Performance: Partikel-Script nur laden, wenn nötig. Caching-Strategien werden serverseitig konfiguriert (z.B. Cache-Control Header). -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     <script>
-    // Validierter und modularer JavaScript-Code
     document.addEventListener('DOMContentLoaded', () => {
         
-        // --- Internationalisierungs-Logik (i18n) ---
-        const translations = {
-            de: {
-                "nav.brand": "Die Stille Revolution", "nav.beginn": "Der Beginn", "nav.fundament": "Das Fundament", "nav.wege": "Zwei Wege", "nav.effekt": "Der Effekt", "nav.these": "Die These",
-                "hero.title1.1": "Ein unbeschriebenes", "hero.title1.2": "Blatt.", "hero.title2.1": "Die Zukunft,", "hero.title2.2": "geformt durch uns.",
-                "hero.subtitle": "Jeder Mensch beginnt als reines Potenzial. Die größte und leiseste Revolution der Weltgeschichte findet nicht auf den Straßen statt, sondern im Kinderzimmer. Sie beginnt mit Bewusstsein.",
-                "hero.button": "Entdecke die Wurzeln",
-                "fundament.title1": "Das", "fundament.title2": "Fundament", "fundament.subtitle": "Neurobiologie und Entwicklungspsychologie beweisen: Die ersten Jahre sind entscheidend. Bewusste Elternschaft ist keine Ideologie, sondern die Programmierung des Betriebssystems für ein ganzes Leben.",
-                "fundament.empathy.title": "Die Architektur der Empathie", "fundament.empathy.text": "Fähigkeiten wie Mitgefühl und Resilienz sind nicht angeboren, sondern werden in den kritischen Entwicklungsphasen geformt. Eine sichere Bindung ist der Nährboden, auf dem die neuronalen Bahnen für soziale Kompetenz wachsen. Es ist die wirtschaftlich klügste und humanste Investition, die eine Gesellschaft tätigen kann.", "fundament.source": "Quelle: Center on the Developing Child, Harvard University (angepasst). Datenstand: Q3 2025.",
-                "wege.title1": "Zwei", "wege.title2": "Wege", "wege.title3": ", eine Wurzel", "wege.subtitle": "Die Weichen werden früh gestellt. Die Umgebung, die wir schaffen, bestimmt den Weg. Die Extreme, die aus unbewusster vs. bewusster Erziehung resultieren, sind wissenschaftlich evident.",
-                "wege.unconscious.title": "Der Weg der Leere: Unbewusste Prägung", "wege.unconscious.text": "Übermäßiger Medienkonsum und mangelnde emotionale Zuwendung sind Symptome einer tieferen Ursache: unbewusste Eltern, die ihre eigenen ungelösten Muster weitergeben.", "wege.consequences": "Langfristige Konsequenzen:",
-                "wege.unconscious.c1": "Statistisch höheres Risiko für Depressionen, Angststörungen & Sucht.", "wege.unconscious.c2": "Geringere Bildungschancen und berufliches Potenzial.", "wege.unconscious.c3": "Höhere Wahrscheinlichkeit, den Kreislauf fortzusetzen.",
-                "wege.conscious.title": "Der Weg der Fülle: Bewusste Gestaltung", "wege.conscious.text": "Eine Umgebung, die von Naturverbundenheit, Kreativität und echter menschlicher Verbindung geprägt ist, entsteht durch bewusste Entscheidungen.",
-                "wege.conscious.c1": "Entwicklung von Resilienz und emotionaler Stabilität.", "wege.conscious.c2": "Hohe soziale Kompetenz und Empathiefähigkeit.", "wege.conscious.c3": "Befähigung, als Gestalter positiv in die Gesellschaft zu wirken.",
-                "welle.title1": "Der", "welle.title2": "Welleneffekt", "welle.subtitle": "Veränderung ist ansteckend. Ein einzelner Akt des Bewusstseins, eine einzige liebevolle Interaktion, pflanzt einen Samen, der sich exponentiell ausbreitet.",
-                "welle.chart.title": "Von ICH zu WIR", "welle.chart.text": "Die Theorie der „sozialen Ansteckung“ belegt: Emotionen, Ideen und Verhaltensweisen verbreiten sich in sozialen Netzwerken wie Wellen. Jede bewusste Handlung inspiriert andere.", "welle.timeline.title": "Die Stufen des Wandels",
-                "welle.timeline.s1.title": "1. Innere Einkehr", "welle.timeline.s1.text": "Alles beginnt mit der Selbstreflexion des Einzelnen.", "welle.timeline.s2.title": "2. Bewusste Handlung", "welle.timeline.s2.text": "Die Erkenntnis manifestiert sich im Verhalten.", "welle.timeline.s3.title": "3. Soziale Ansteckung", "welle.timeline.s3.text": "Das neue Verhalten inspiriert das Umfeld.", "welle.timeline.s4.title": "4. Kulturelle Transformation", "welle.timeline.s4.text": "Neue Werte verändern die Gesellschaft.",
-                "these.title1": "DER MENSCH.", "these.title2": "DIE STILLE REVOLUTION.", "these.subtitle": "Die größte Kraft zur Lösung unserer globalen Krisen liegt nicht in äußeren Systemen, sondern in der inneren Transformation des Einzelnen. Sie ist die einzige Revolution, die nicht durch Blut, sondern durch Liebe gewinnt.",
-                "footer.basis": "Basiert auf evidenzbasierter Forschung.", "footer.collab": "Eine synergetische Kollaboration von menschlicher Vision und KI-Analyse."
-            },
-            en: { // English Translations
-                "nav.brand": "The Silent Revolution", "nav.beginn": "The Beginning", "nav.fundament": "The Foundation", "nav.wege": "Two Paths", "nav.effekt": "The Effect", "nav.these": "The Thesis",
-                "hero.title1.1": "A blank", "hero.title1.2": "sheet.", "hero.title2.1": "The future,", "hero.title2.2": "shaped by us.",
-                "hero.subtitle": "Every human begins as pure potential. The greatest and quietest revolution in world history is not happening on the streets, but in the nursery. It begins with consciousness.",
-                "hero.button": "Discover the Roots",
-                "fundament.title1": "The", "fundament.title2": "Foundation", "fundament.subtitle": "Neurobiology and developmental psychology prove: the first years are crucial. Conscious parenting is not an ideology, but the programming of the operating system for a lifetime.",
-                "fundament.empathy.title": "The Architecture of Empathy", "fundament.empathy.text": "Skills like compassion and resilience are not innate but are formed in the critical developmental phases. A secure attachment is the fertile ground on which neural pathways for social competence grow. It is the wisest economic and most humane investment a society can make.", "fundament.source": "Source: Center on the Developing Child, Harvard University (adapted). Data as of Q3 2025.",
-                "wege.title1": "Two", "wege.title2": "Paths", "wege.title3": ", One Root", "wege.subtitle": "The course is set early. The environment we create determines the path. The extremes resulting from unconscious vs. conscious parenting are scientifically evident.",
-                "wege.unconscious.title": "The Path of Emptiness: Unconscious Imprinting", "wege.unconscious.text": "Excessive media consumption and lack of emotional attention are symptoms of a deeper cause: unconscious parents passing on their own unresolved patterns.", "wege.consequences": "Long-term Consequences:",
-                "wege.unconscious.c1": "Statistically higher risk for depression, anxiety disorders & addiction.", "wege.unconscious.c2": "Lower educational opportunities and professional potential.", "wege.unconscious.c3": "Higher likelihood of continuing the cycle.",
-                "wege.conscious.title": "The Path of Abundance: Conscious Design", "wege.conscious.text": "An environment characterized by a connection to nature, creativity, and genuine human connection is created through conscious decisions.",
-                "wege.conscious.c1": "Development of resilience and emotional stability.", "wege.conscious.c2": "High social competence and empathy.", "wege.conscious.c3": "Empowerment to act as positive contributors to society.",
-                "welle.title1": "The", "welle.title2": "Ripple Effect", "welle.subtitle": "Change is contagious. a single act of consciousness, a single loving interaction, plants a seed that spreads exponentially.",
-                "welle.chart.title": "From I to WE", "welle.chart.text": "The theory of 'social contagion' proves: emotions, ideas, and behaviors spread through social networks like waves. Every conscious action inspires others.", "welle.timeline.title": "The Stages of Change",
-                "welle.timeline.s1.title": "1. Inner Reflection", "welle.timeline.s1.text": "Everything begins with the individual's self-reflection.", "welle.timeline.s2.title": "2. Conscious Action", "welle.timeline.s2.text": "The insight manifests in behavior.", "welle.timeline.s3.title": "3. Social Contagion", "welle.timeline.s3.text": "The new behavior inspires the environment.", "welle.timeline.s4.title": "4. Cultural Transformation", "welle.timeline.s4.text": "New values change society.",
-                "these.title1": "HUMANITY.", "these.title2": "THE SILENT REVOLUTION.", "these.subtitle": "The greatest power to solve our global crises lies not in external systems, but in the inner transformation of the individual. It is the only revolution won not by blood, but by love.",
-                "footer.basis": "Based on evidence-based research.", "footer.collab": "A synergetic collaboration of human vision and AI analysis."
-            }
-            // Add placeholders for es, fr, ru, ar, zh
-        };
-        // Add basic support for other languages by falling back to English
-        translations.es = translations.en;
-        translations.fr = translations.en;
-        translations.ru = translations.en;
-        translations.ar = translations.en; // Note: Real Arabic would need more than just text translation
-        translations.zh = translations.en;
-
-
-        const getLanguage = () => {
-            const urlLang = new URLSearchParams(window.location.search).get('lang');
-            if (urlLang && translations[urlLang]) return urlLang;
-            const browserLang = navigator.language.split('-')[0];
-            return translations[browserLang] ? browserLang : 'de';
-        };
-
-        const setLanguage = (lang) => {
-            if (!translations[lang]) return;
-            const langPack = translations[lang];
-            document.querySelectorAll('[data-translate]').forEach(el => {
-                const key = el.getAttribute('data-translate');
-                if (langPack[key]) el.innerHTML = langPack[key];
-            });
-            document.documentElement.lang = lang;
-            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-            document.getElementById('current-lang-text').textContent = lang.toUpperCase();
-            
-            // Update OG and title meta tags
-            document.title = langPack["nav.brand"];
-            document.querySelector('meta[name="description"]').setAttribute('content', langPack["hero.subtitle"]);
-            document.querySelector('meta[property="og:title"]').setAttribute('content', langPack["nav.brand"]);
-            document.querySelector('meta[property="og:description"]').setAttribute('content', langPack["hero.subtitle"]);
-            document.querySelector('meta[property="twitter:title"]').setAttribute('content', langPack["nav.brand"]);
-            document.querySelector('meta[property="twitter:description"]').setAttribute('content', langPack["hero.subtitle"]);
-        };
-
-        const currentLang = getLanguage();
-        setLanguage(currentLang);
-        
-        const langSwitcher = document.getElementById('lang-switcher');
-        const langButton = document.getElementById('lang-button');
-        const langMenu = document.getElementById('lang-menu');
-        if (langSwitcher && langButton && langMenu) {
-            langButton.addEventListener('click', () => {
-                const isExpanded = langButton.getAttribute('aria-expanded') === 'true';
-                langButton.setAttribute('aria-expanded', !isExpanded);
-                langMenu.classList.toggle('hidden');
-            });
-            document.addEventListener('click', (e) => {
-                if (!langSwitcher.contains(e.target)) {
-                    langButton.setAttribute('aria-expanded', 'false');
-                    langMenu.classList.add('hidden');
-                }
-            });
-            document.querySelectorAll('.lang-option').forEach(option => {
-                option.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const newLang = e.target.getAttribute('data-lang');
-                    if (newLang !== currentLang) {
-                         const url = new URL(window.location);
-                         url.searchParams.set('lang', newLang);
-                         window.history.pushState({}, '', url);
-                         setLanguage(newLang);
-                    }
-                });
-            });
-        }
-
-        // --- Robuste UI-Interaktionen ---
+        // --- UI-Interaktionen ---
         if (typeof particlesJS !== 'undefined') {
             particlesJS('particles-js', { "particles": { "number": { "value": 60, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#38b2ac" }, "shape": { "type": "circle" },"opacity": { "value": 0.4, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#4a5568", "opacity": 0.3, "width": 1 }, "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 } } }, "retina_detect": true });
         }
@@ -444,8 +365,7 @@
                             options: {
                                 responsive: true, maintainAspectRatio: false,
                                 plugins: { legend: { display: false }, title: { display: true, text: 'Exponentielles Wachstum durch den Welleneffekt', font: { size: 14, weight: 'bold' }, color: '#f1f5f9' }},
-                                scales: { y: { type: 'logarithmic', min: 1 }, x: {} },
-                                color: '#f1f5f9',
+                                scales: { y: { type: 'logarithmic', min: 1, ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } },
                             }
                         });
                         observer.disconnect();
@@ -475,7 +395,10 @@
                 }
             });
             navLinks.forEach(link => {
-                link.classList.toggle('active', link.hash === `#${currentId}`);
+                // Nur interne Links als aktiv markieren
+                if (link.getAttribute('href').startsWith('#')) {
+                    link.classList.toggle('active', link.hash === `#${currentId}`);
+                }
             });
         };
         window.addEventListener('scroll', activateNavLink, { passive: true });
